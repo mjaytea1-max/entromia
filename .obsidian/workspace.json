@@ -209,6 +209,8 @@
   },
   "active": "6df8b72c0841a2a9",
   "lastOpenFiles": [
+    "quartz.ts",
+    "Текстовый документ.txt",
     "index.d.ts",
     "tsconfig.json",
     "quartz.config.yaml",
@@ -218,8 +220,6 @@
     "quartz/static/giscus/dark.css",
     "quartz/plugins/transformers/index.ts",
     "quartz/plugins/pageTypes/matchers.ts",
-    "quartz/plugins/pageTypes/index.ts",
-    "quartz/plugins/pageTypes/dispatcher.ts",
     "quartz/static/og-image.png",
     "quartz/static/icon.png",
     "content/04_Лор/Без названия.md",
