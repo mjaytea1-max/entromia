@@ -1,3 +1,26 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+article img {
+    border-radius: 8px;
+    border: 1px solid var(--lightgray);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+// Неоновый акцент для главного заголовка статьи
+.article-title {
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.45);
+    letter-spacing: 0.03em;
+}
+
+// Легкая подсветка внутренних вики-ссылок при наведении
+a.internal:hover {
+    text-shadow: 0 0 8px var(--secondary);
+    transition: all 0.2s ease;
+}
+.callout[data-callout="kub"] {
+    --color: #00d2ff;
+    --border: rgba(0, 210, 255, 0.35);
+    --bg: rgba(0, 210, 255, 0.07);
+    border-left-width: 4px;
+    font-family: var(--codeFont);
+}
