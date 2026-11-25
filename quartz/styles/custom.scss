@@ -118,3 +118,8 @@ pre:has(> code.mermaid), .mermaid {
     --bg: rgba(181, 101, 255, 0.08);
     border-radius: var(--ui-radius);
 }
+
+.graph-outer {
+    background: rgba(11, 15, 25, 0.65) !important;
+    border: 1px solid rgba(0, 229, 255, 0.3) !important;
+}
