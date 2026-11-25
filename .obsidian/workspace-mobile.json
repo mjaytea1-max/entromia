@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Путеводитель по Энтромии.md",
+                "file": "content/Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Путеводитель по Энтромии"
+              "title": "Index"
             }
           }
         ]
@@ -178,7 +178,7 @@
   "lastOpenFiles": [
     "content/03_Локации/Карта Энтромии.md",
     "content/03_Локации/Орбитальное Кольцо.md",
-    "content/Путеводитель по Энтромии.md",
+    "content/Index.md",
     "content/00_Шаблоны/Шаблон_Глоссарий.md",
     "content/00_Шаблоны/Шаблон_Фракция.md",
     "content/00_Шаблоны/Шаблон_Локации.md",
