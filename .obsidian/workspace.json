@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Лор/Без названия.md",
+                "file": "content/Пользовательская Информация/Загрязнение Аккаунта.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "Загрязнение Аккаунта"
             }
           }
         ]
@@ -209,10 +209,20 @@
   },
   "active": "6df8b72c0841a2a9",
   "lastOpenFiles": [
+    "content/Пользовательская Информация/ID-Кристалл.md",
+    "content/Пользовательская Информация/Загрязнение Аккаунта.md",
+    "content/Пользовательская Информация/Без названия.canvas",
+    "content/Пользовательская Информация/Без названия.base",
+    "content/Пользовательская Информация/Регистрация Аккаунтов.md",
+    "content/Персонажи/Курсай.md",
+    "content/Персонажи/Имокоут.md",
+    "content/Архив миссий/Без названия.md",
+    "content/Лор/Без названия.md",
+    "content/Архив миссий",
+    "Протоколы.Рабочих",
     "content/Index.md",
     "content/00_Шаблоны/Шаблон_Карта_Мира.md",
-    "content/Лор/Без названия.md",
-    "content/Аккаунты",
+    "content/Пользовательская Информация",
     "content/index.md",
     "content/00_Шаблоны/Шаблон_Локации.md",
     "content/00_Шаблоны/Шаблон_Персонаж.md",
@@ -220,9 +230,6 @@
     "content/00_Шаблоны/Шаблон_Фракция.md",
     "content/Персонажи/Этемосомн.md",
     "content/Персонажи/Кустаф.md",
-    "content/Персонажи/Курсай.md",
-    "content/Персонажи/Имокоут.md",
-    "content/Персонажи/Без названия.md",
     "content/Фракции/Культ Смерти.md",
     "content/Фракции/Ангелы Симбиоза.md",
     "content/Фракции/Кольцо Жизни.md",
@@ -233,18 +240,12 @@
     "content/Локации/Поликар.md",
     "content/Локации/Орбитальное Кольцо.md",
     "content/Локации/Нижний Мир.md",
-    "content/Локации/Коллизии.md",
-    "content/Локации/Карта Энтромии.md",
-    "content/Локации/Глитч-Зоны.md",
     "quartz.ts",
     "Текстовый документ.txt",
     "index.d.ts",
     "tsconfig.json",
     "quartz.config.yaml",
     "package-lock.json",
-    "package.json",
-    "quartz/static/giscus/light.css",
-    "quartz/static/giscus/dark.css",
     "quartz/static/og-image.png",
     "quartz/static/icon.png"
   ]
