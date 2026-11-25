@@ -4,107 +4,105 @@
 // 1. ПУЛЬТ УПРАВЛЕНИЯ СТИЛЕМ (МЕНЯЙТЕ ЭТИ ЗНАЧЕНИЯ ПОД СЕБЯ)
 // =========================================================================
 :root {
-    // Цвета кибер-акцентов (можно брать HEX-коды с любого онлайн-подборщика цветов)
     --steklo-neon: #00e5ff; // Основной неон (голубой цвет Стеклонити)
-    --crystal-purple: #b565ff; // Дополнительный акцент (фиолетовый Айди-Кристалла)
-    --kub-orange: #ff7b00; // Корпоративный цвет КУБа (для предупреждений)
-    // Форма элементов (0px = острые техно-углы, 8px = мягкие, 20px = круглые)
-    --ui-radius: 6px; // Скругление рамок, поиска и карточек
-    --glow-strength: 15px; // Сила свечения неона (0px = отключить свечение)
+    --crystal-purple: #b565ff; // Фиолетовый акцент Айди-Кристалла
+    --kub-orange: #ff7b00; // Оранжевый акцент КУБа
+
+    --ui-radius: 6px; // Скругление углов (0px = острые, 12px = круглые)
+    --glow-strength: 14px; // Сила свечения заголовков
 }
 
 // =========================================================================
-// 2. ЗАГОЛОВКИ И ТЕКСТ (ШРИФТЫ, СВЕЧЕНИЕ, ОТСТУПЫ)
+// 2. ФОНОВАЯ КАРТИНКА САЙТА (ИЗ ПАПКИ quartz/static/bg.jpg)
+// =========================================================================
+body {
+    // Затемнение поверх картинки (0.82 = 82% темноты, чтобы текст хорошо читался)
+    // Если картинки bg.jpg еще нет, будет просто красивый темный градиент
+    background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.92)), url("/entromia/static/bg.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+// В светлой теме делаем светлую полупрозрачную вуаль поверх фоновой картинки
+:root[saved-theme="light"] body {
+    background: linear-gradient(rgba(250, 248, 248, 0.88), rgba(250, 248, 248, 0.94)), url("/entromia/static/bg.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+// =========================================================================
+// 3. ЗАГОЛОВКИ И ССЫЛКИ (РАБОТАЕТ НА ВСЕХ СТРАНИЦАХ QUARTZ V5)
 // =========================================================================
 
 // Главный заголовок страницы (H1)
-.article-title {
-    color: var(--dark);
-    text-shadow: 0 0 var(--glow-strength) rgba(0, 229, 255, 0.45); // Неоновый ореол
-    letter-spacing: 0.04em; // Расстояние между буквами (кибер-стиль)
-    border-bottom: 1px solid var(--lightgray); // Тонкая линия под заголовком
+h1 {
+    text-shadow: 0 0 var(--glow-strength) rgba(0, 229, 255, 0.5) !important;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.3);
     padding-bottom: 0.4rem;
 }
 
-// Подзаголовки внутри статьи (H2)
+// Подзаголовки (H2)
 article h2 {
-    border-left: 3px solid var(--steklo-neon); // Вертикальная неоновая полоска слева
-    padding-left: 10px;
+    border-left: 3px solid var(--steklo-neon);
+    padding-left: 12px;
     margin-top: 1.8rem;
 }
 
-// =========================================================================
-// 3. ССЫЛКИ И КНОПКИ ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА
-// =========================================================================
-
-// Внутренние вики-ссылки [[...]]
+// Все внутренние вики-ссылки [[...]]
 a.internal {
     border-radius: 4px;
     padding: 1px 4px;
-    transition: all 0.2s ease; // Плавная анимация при наведении
+    transition: all 0.2s ease;
 
     &:hover {
-        background-color: rgba(0, 229, 255, 0.15); // Подсветка фона ссылки
-        box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+        background-color: rgba(0, 229, 255, 0.18) !important;
+        box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
     }
 }
 
 // =========================================================================
-// 4. ФОРМА ИНТЕРФЕЙСА: ПОИСК, БОКОВЫЕ ПАНЕЛИ, ГРАФ СВЯЗЕЙ
+// 4. ИНТЕРФЕЙС: ПОИСК, КНОПКИ, ГРАФ И КАРТИНКИ
 // =========================================================================
 
-// Строка поиска
-.search > .search-button {
-    border-radius: var(--ui-radius);
-    border: 1px solid var(--lightgray);
-    transition: border-color 0.2s ease;
-
-    &:hover {
-        border-color: var(--steklo-neon); // Неоновая рамка при наведении на поиск
-    }
+// Кнопка поиска и переключатели
+button, input {
+    border-radius: var(--ui-radius) !important;
 }
 
-// Окошко графа связей справа
-.graph > .graph-outer {
+// Окошко графа связей и боковые блоки
+.graph-outer, .backlinks, .toc, .explorer {
     border-radius: var(--ui-radius);
-    border: 1px solid var(--lightgray);
-    background: rgba(0, 0, 0, 0.15); // Слегка затемненный фон под графом
 }
 
-// =========================================================================
-// 5. КАРТИНКИ И СХЕМЫ MERMAID
-// =========================================================================
-
-// Все картинки на сайте (портреты, арты локаций)
+// Все картинки внутри статей (портреты персонажей, локации)
 article img {
     border-radius: var(--ui-radius);
-    border: 1px solid var(--lightgray);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35); // Объемная тень
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 
-// Схемы и древа Mermaid (карта Энтромии, таймлайны)
-pre:has(> code.mermaid) {
-    background: rgba(15, 23, 42, 0.4);
-    border: 1px solid var(--lightgray);
+// Схемы и древа Mermaid
+pre:has(> code.mermaid), .mermaid {
+    background: rgba(15, 23, 42, 0.55) !important;
+    border: 1px solid rgba(0, 229, 255, 0.25);
     border-radius: var(--ui-radius);
     padding: 1rem;
 }
 
 // =========================================================================
-// 6. ФИРМЕННЫЕ ВЫНОСКИ (CALLOUTS) ДЛЯ СЕТТИНГА
+// 5. ФИРМЕННЫЕ ВЫНОСКИ (CALLOUTS)
 // =========================================================================
 
-// Официальный бланк КУБа: пишется в тексте как > [!kub] Заголовок
+// Официальный бланк КУБа: > [!kub]
 .callout[data-callout="kub"] {
     --color: var(--steklo-neon);
-    --border: rgba(0, 229, 255, 0.4);
+    --border: rgba(0, 229, 255, 0.45);
     --bg: rgba(0, 229, 255, 0.08);
     border-radius: var(--ui-radius);
     border-left-width: 4px;
-    font-family: var(--codeFont); // Моноширинный «терминальный» шрифт
+    font-family: var(--codeFont);
 }
 
-// Ошибка / Заражение Айди-Кристалла: пишется как > [!bug-alert] Заголовок
+// Ошибка / Заражение: > [!bug-alert]
 .callout[data-callout="bug-alert"] {
     --color: var(--kub-orange);
     --border: rgba(255, 123, 0, 0.45);
@@ -113,40 +111,10 @@ pre:has(> code.mermaid) {
     border-left-width: 4px;
 }
 
-// Плашка переключения языка: пишется как > [!lang] Язык / Language
+// Плашка переключения языка: > [!lang]
 .callout[data-callout="lang"] {
     --color: var(--crystal-purple);
-    --border: rgba(181, 101, 255, 0.35);
-    --bg: rgba(181, 101, 255, 0.06);
+    --border: rgba(181, 101, 255, 0.4);
+    --bg: rgba(181, 101, 255, 0.08);
     border-radius: var(--ui-radius);
-    padding: 0.4rem 0.8rem;
-    margin-bottom: 1.2rem;
-}
-
-// =========================================================================
-// 7. ПОЛОСА ПРОКРУТКИ (СКРОЛЛБАР В СТИЛЕ ТЕРМИНАЛА)
-// =========================================================================
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--gray);
-    border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--steklo-neon);
-}
-
-.callout[data-callout="kub"] {
-    --color: #00d2ff;
-    --border: rgba(0, 210, 255, 0.35);
-    --bg: rgba(0, 210, 255, 0.07);
-    border-left-width: 4px;
-    font-family: var(--codeFont);
-}
-body {
-    background-color: #1a0b2e !important;
 }
