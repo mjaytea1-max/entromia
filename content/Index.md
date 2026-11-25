@@ -3,7 +3,7 @@ title: Путеводитель по миру Энтромии
 publish: true
 ---
 > [!lang] Язык / Language
-> **Русский** | [[content/eng/Index|Index]]
+> **Русский** | [[content/eng/Index|English]]
 
 
 
