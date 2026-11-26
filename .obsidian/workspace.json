@@ -211,11 +211,14 @@
   "lastOpenFiles": [
     "content/eng/Index.md",
     "content/Index.md",
+    "content/ru/Index.md",
+    "content/ru/Архив миссий/Без названия.md",
+    "content/ru",
     "content/eng/Фракции/Ring of Life.md",
     "content/eng/Фракции/Corporation Utility Bugs Entronomy.md",
     "content/eng/Фракции/Death Cult.md",
     "content/eng/Фракции/Angels Of Symbiosis.md",
-    "content/Архив миссий/Без названия 1.md",
+    "content/ru/Архив миссий/Без названия 1.md",
     "content/eng/Пользовательская Информация/Регистрация Аккаунтов.md",
     "content/eng/Пользовательская Информация/Загрязнение Аккаунта.md",
     "content/eng/Пользовательская Информация/ID-Кристалл.md",
@@ -233,8 +236,6 @@
     "content/eng/Локации/Орбитальное Кольцо.md",
     "content/eng/Локации/Нижний Мир.md",
     "content/eng/Локации/Коллизии.md",
-    "content/eng/Локации/Карта Энтромии.md",
-    "content/eng/Локации/Глитч-Зоны.md",
     "content/eng/Фракции",
     "content/eng/Пользовательская Информация",
     "content/eng/Персонажи",
@@ -246,7 +247,6 @@
     "ENG",
     "quartz/static/bg.jpg",
     "content/Пользовательская Информация/Без названия.canvas",
-    "content/Пользовательская Информация/Без названия.base",
     "quartz/static/og-image.png",
     "quartz/static/icon.png"
   ]

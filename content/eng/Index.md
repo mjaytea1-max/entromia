@@ -3,7 +3,7 @@ title: Entronomy Guide
 publish: true
 ---
 > [!lang] Language / Язык
-> [[index|Русский]] | **English**
+> [[content/eng/Index|Русский]] | **English**
 
 
 > # Welcome to Entronomy
